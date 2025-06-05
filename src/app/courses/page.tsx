@@ -2,6 +2,7 @@
 import React from 'react'
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import courseData from "@/data/music_course.json";
+import Image from 'next/image'
 function page() {
   return (
     <div className='min-h-screen bg-black py-12 pt-36'>
@@ -24,10 +25,10 @@ function page() {
                 {course.description}
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
-                <img
+                <Image
                   src={course.image}
-                  height="1000"
-                  width="1000"
+                  height={1000}
+                  width={1000}
                   className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                   alt={course.title}
                 />
