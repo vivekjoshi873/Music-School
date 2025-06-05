@@ -21,7 +21,8 @@ export const Meteors = ({
         const meteorCount = number || 20;
         // Calculate position to evenly distribute meteors across container width
         const position = idx * (850 / meteorCount) - 250; // Spread across 800px range, centered
-
+        console.log(el);
+        
         return (
           <span
             key={"meteor" + idx}

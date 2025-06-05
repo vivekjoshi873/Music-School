@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { motion } from "motion/react";
 import { cn } from "../../utils/cn";
-
 export const StickyScroll = ({
   content,
   contentClassName,
@@ -11,7 +10,7 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
-    content?: React.ReactNode | any;
+    content?: React.ReactNode | string | null| undefined;
   }[];
   contentClassName?: string;
 }) => {

@@ -27,7 +27,7 @@ export function Button({
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
+  [key: string]: string|number|boolean|React.ReactNode;
 }) {
   return (
     <Component
@@ -80,7 +80,7 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
+  [key: string]: string|number|boolean|React.ReactNode; 
 }) => {
   const pathRef = useRef<any>(null);
   const progress = useMotionValue<number>(0);
